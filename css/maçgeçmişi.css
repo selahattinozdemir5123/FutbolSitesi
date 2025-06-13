@@ -1,0 +1,247 @@
+.mac-gecmisi {
+    max-width: 750px;
+    margin: 3rem auto;
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 2.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition);
+    color: var(--text);
+}
+.mac-gecmisi.gorunur {
+    opacity: 1;
+    transform: translateY(0);
+}
+.bolum-baslikk {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.bolum-baslikk h2 {
+    font-size: 2.75rem;
+  color: #0f172a;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+}
+.bolum-baslikk::after {
+    content: "";
+    display: block;
+    width: 80px; 
+    height: 4px; 
+    background-color: var(--primary-dark); 
+    margin: 0 auto; 
+    margin-top: 0.25rem; 
+    border-radius: var(--radius-sm);
+}
+.takim-secici {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+#takimSec {
+    padding: 0.85rem 1.25rem;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--primary);
+    font-size: 1.05rem;
+    width: 80%;
+    max-width: 800px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    background-color: rgba(52, 152, 219, 0.02);
+}
+#takimSec:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-md);
+}
+.mac-gecmis-listesi {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.mac-gecmis-ogesi {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
+    margin-bottom: 1rem;
+    border-left: 4px solid transparent;
+}
+.mac-gecmis-ogesi.gorunur {
+    opacity: 1;
+    transform: translateY(0);
+}
+.mac-gecmis-ogesi:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--primary);
+}
+.mac-tarih {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.65rem;
+    border-radius: var(--radius-sm);
+    min-width: 75px;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.25);
+    transition: var(--transition);
+}
+.mac-tarih .gun {
+    font-size: 1.65rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+.mac-tarih .ay {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.mac-detaylar {
+    flex-grow: 1;
+    padding: 0 0.5rem;
+}
+.yarisma {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.mac-takimlari {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.mac-takimlari .ev-sahibi, 
+.mac-takimlari .deplasman {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.mac-takimlari .skor {
+    background-color: var(--success);
+    color: white;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+    transition: var(--transition);
+}
+.mac-sonuc {
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    font-size: 1.1rem;
+}
+.mac-sonuc.galibiyet {
+    background-color: var(--success);
+    color: white;
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+}
+.mac-sonuc.beraberlik {
+    background-color: var(--warning);
+    color: white;
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.3);
+}
+.mac-sonuc.maglubiyet {
+    background-color: var(--danger);
+    color: white;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+@media (max-width: 768px) {
+    .mac-gecmisi {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+    .bolum-baslik h2 {
+        font-size: 1.8rem;
+    } 
+    #takimSec {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .mac-gecmisi {
+        padding: 1.25rem;
+        border-radius: var(--radius-md);
+    }
+    .mac-gecmis-ogesi {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+    }
+    .mac-tarih {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .mac-detaylar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .yarisma {
+        margin-bottom: 0.5rem;
+    }
+    .mac-takimlari {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .mac-sonuc {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .bolum-baslik h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 400px) {
+    .mac-gecmisi {
+        padding: 1rem;
+        margin: 1.5rem 0.5rem;
+    }
+    .mac-gecmis-ogesi {
+        padding: 0.75rem;
+    }
+    .mac-tarih {
+        min-width: 65px;
+        padding: 0.5rem;
+    }
+    .mac-tarih .gun {
+        font-size: 1.4rem;
+    }
+    .mac-takimlari .ev-sahibi, 
+    .mac-takimlari .deplasman {
+        font-size: 1rem;
+    }
+}

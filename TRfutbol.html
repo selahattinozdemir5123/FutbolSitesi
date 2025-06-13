@@ -1,0 +1,586 @@
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRfutbol</title>
+  <!-- GEREKLİ TÜM CSS VE JS KÜTÜPHANELERİ VE LİNKLER-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://unpkg.com/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/maçtabloları.css">
+  <link rel="stylesheet" href="css/trasnferhaberleri.css">
+  <link rel="stylesheet" href="css/anasayfakart.css">
+  <link rel="stylesheet" href="css/maçgeçmişi.css">
+  <link rel="stylesheet" href="css/hakkımızda.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/yukarı.css">
+  <style>
+     body{
+        background: rgb(33,27,110);
+        background: linear-gradient(90deg, rgba(33,27,110,1) 0%, rgba(16,185,129,1) 37%, rgba(27,90,226,1) 100%);
+     }
+     html{
+        scroll-behavior: smooth;
+     }
+  </style>
+  <!-- GEREKLİ TÜM CSS VE JS KÜTÜPHANELERİ VE LİNKLER-->
+</head>
+<body>
+    <!-- NAVBAR BAŞLANIÇ -->
+    <header>
+        <a href="#" class="logo">TR <span id="logoyazi">FUTBOL</span></a>
+        <div id="mobilmenü" onclick="toggleMobileMenu()">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="gezinmemenüsü">
+            <ul>
+                <li><a href="#anasayfa"><i class="fa-solid fa-house"></i>Anasayfa</a></li>
+                <li><a href="#haberler"><i class="fa-solid fa-newspaper"></i>Transfer Haberleri</a></li>
+                <li><a href="#skorlar"><i class="fa-solid fa-futbol"></i>Canlı Skorlar</a></li>
+                <li><a href="#maçgeçmişi"><i class="fa-solid fa-calendar"></i>Maç Geçmişi</a></li>
+                <li><a href="#hakkımızda"><i class="fa-solid fa-user"></i>Hakkımızda</a></li>
+                <li><a href="kayıtvegirişyap.html"><i class="fa-solid fa-right-to-bracket"></i>Giriş Yap & kayıt ol</a></li>
+            </ul>
+        </nav>
+      </header>
+      
+  <!-- NAVBAR BİTİŞ -->
+ <!-- ANASAYFA BAŞLANGIÇ -->
+  <div class="main-container">
+    <section class="anasayfa" id="anasayfa">
+        <div class="icerik">
+          <h1>TRFUTBOLA Hoşgeldiniz!</h1>
+          <h4>
+            <span class="canli-nokta"></span>
+            Canlı 
+            <div class="dinamik-metin">
+              <span class="yazma-metin aktif">Transfer Haberleri</span>
+              <span class="yazma-metin">Maç Sonuçları</span>
+              <span class="yazma-metin">Puan Durumu</span>
+              <span class="yazma-metin">Son Dakika Yorumları</span>
+            </div>
+          </h4>
+          <p>
+            Türkiye'nin en güncel futbol platformuna hoş geldiniz! Transfer haberleri, canlı skorlar, maç analizleri ve çok daha fazlası burada.
+          </p>
+          <div class="sosyal-medya">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <img src="resimler/casillas.jpeg" width="600" height="400" loading="lazy" alt="casillas">
+      </section>
+      
+    <!-- ANASAYFA BİTİŞ -->
+    <!-- TRANSFER HABERLERİ BAŞLANGIÇ -->
+    <section class="transfer-haberleri" id="haberler">
+        <div class="kapsayici">
+            <div class="bolum-baslik">
+                <h2>Son Dakika Transfer Haberleri 👀</h2>
+            </div>
+            
+            <div class="swiper kaydirmali-galeri">
+                <div class="swiper-wrapper">
+                  
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/mbapperealmadrid.jpeg" alt="Mbappe Transfer Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Transfer</span>
+                                <h3>Mbappe Real Madrid'de!</h3>
+                                <p>Dünya futbolunun yıldız oyuncusu Kylian Mbappe transferi resmen açıklandı.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-10">10 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/mesutözil.jpeg" alt="Mesut Özil Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Kariyer</span>
+                                <h3>Mesut Özil'den Sürpriz Karar</h3>
+                                <p>Fenerbahçe'nin eski yıldızı Mesut Özil, futbol kariyerinde yeni bir sayfa açıyor.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-09">9 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/galatasaray.jpeg" alt="Galatasaray Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Gündem</span>
+                                <h3>Galatasaray'dan Transfer Bombası</h3>
+                                <p>Sarı-kırmızılı kulüp, süper yıldız transferini resmen açıkladı.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-08">8 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/rafasilva.jpeg" alt="Rafa Silva Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Transfer</span>
+                                <h3>Rafa Silva'dan Sürpriz Karar</h3>
+                                <p>Portekizli futbolcu, gelecek planları hakkında açıklama yaptı.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-07">7 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="500">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/haaland.jpeg" alt="Haaland Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Söylenti</span>
+                                <h3>Haaland İçin Dev Teklif</h3>
+                                <p>Manchester City'nin yıldızına İspanya'dan resmi transfer teklifi geldi.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-06">6 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="600">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/neymar.jpeg" alt="Neymar Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Geri Dönüş</span>
+                                <h3>Neymar Avrupa'ya Dönüyor</h3>
+                                <p>Brezilyalı süperstar, sakatlığını atlattı ve sürpriz bir kulüple anlaştı.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-05">5 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="700">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/fenerbahçe.jpeg" alt="Fenerbahçe Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">İddia</span>
+                                <h3>Fenerbahçe'den Çifte Transfer</h3>
+                                <p>Sarı-lacivertliler, iki dünya yıldızıyla anlaşmak üzere. Detaylar belli oldu.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-04">4 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="800">
+                        <article class="haber-karti">
+                            <figure class="kart-resim">
+                                <img src="resimler/messi.jpeg" alt="Messi Haberi">
+                            </figure>
+                            <div class="kart-icerik">
+                                <span class="kart-etiketi">Son Dakika</span>
+                                <h3>Messi'den Şok Karar!</h3>
+                                <p>Arjantinli yıldız, kariyeriyle ilgili çarpıcı açıklamalarda bulundu.</p>
+                                <div class="kart-alt">
+                                    <time datetime="2025-03-03">3 Mart 2025</time>
+                                    <a href="#" class="devamini-oku">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSFER HABERLERİ BİTİŞ -->
+<!-- PUAN DURUMU BAŞLANGIÇ -->
+<section class="fikstur-puan" id="skorlar">
+    <div class="anaKap">
+        <div class="bolum-baslik">
+            <h2>Fikstür & Puan Durumu ⚽</h2>
+        </div>
+        
+        <div class="filtre-form">
+            <select id="sezonSecim" class="filtre-secim">
+                <option value="guncel">2023-2024 Sezonu</option>
+                <option value="onceki">2022-2023 Sezonu</option>
+            </select>
+            <input type="text" id="takimArama" class="arama-kutusu" placeholder="Takım ara...">
+        </div>
+        
+        <div class="ligler-sekmeler">
+            <button class="lig-sekme aktif" data-league="superlig">Süper Lig</button>
+            <button class="lig-sekme" data-league="premier">Premier Lig</button>
+            <button class="lig-sekme" data-league="laliga">La Liga</button>
+            <button class="lig-sekme" data-league="bundesliga">Bundesliga</button>
+            <button class="lig-sekme" data-league="seriea">Serie A</button>
+        </div>
+        
+        <div class="lig-icerik">
+            <div class="siralama-kap">
+                <h3>Puan Durumu</h3>
+                <table class="siralama-tablo">
+                    <thead>
+                        <tr>
+                            <th>Sıra</th>
+                            <th>Takım</th>
+                            <th>O</th>
+                            <th>G</th>
+                            <th>B</th>
+                            <th>M</th>
+                            <th>A</th>
+                            <th>Y</th>
+                            <th>Av</th>
+                            <th>P</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- JavaScript ile veri koyulacak -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="takim-istatistik">
+            <div class="istatistik-kart">
+                <div class="istatistik-etiket">En Çok Gol Atan</div>
+                <div class="istatistik-deger" id="enCokGol">0</div>
+                <div class="istatistik-takim" id="enCokGolTakim">-</div>
+            </div>
+            <div class="istatistik-kart">
+                <div class="istatistik-etiket">En Az Gol Yiyen</div>
+                <div class="istatistik-deger" id="enAzYiyenGol">0</div>
+                <div class="istatistik-takim" id="enAzYiyenGolTakim">-</div>
+            </div>
+            <div class="istatistik-kart">
+                <div class="istatistik-etiket">En İyi Averaj</div>
+                <div class="istatistik-deger" id="enIyiAveraj">0</div>
+                <div class="istatistik-takim" id="enIyiAverajTakim">-</div>
+            </div>
+            <div class="istatistik-kart">
+                <div class="istatistik-etiket">En Çok Galibiyet</div>
+                <div class="istatistik-deger" id="enCokGalibiyet">0</div>
+                <div class="istatistik-takim" id="enCokGalibiyetTakim">-</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PUAN DURUMU BİTİŞ -->
+    <!-- MAÇ GEÇMİŞİ BAŞLANGIÇ -->
+    <section class="mac-gecmisi" id="macGecmisi">
+        <div class="container">
+            <div class="bolum-baslikk">
+                <h2>Maç Geçmişi 🎞</h2>
+            </div>
+            
+            <div class="takim-secici">
+                <select id="takimSec" onchange="maclariFiltrele()">
+                    <option value="hepsi">Takım Seçin</option>
+                    <option value="galatasaray">Galatasaray</option>
+                    <option value="fenerbahce">Fenerbahçe</option>
+                    <option value="besiktas">Beşiktaş</option>
+                    <option value="trabzonspor">Trabzonspor</option>
+                </select>
+            </div>
+            
+            <div class="mac-gecmis-listesi" id="macGecmisiListesi">
+                <div class="mac-gecmis-ogesi galatasaray">
+                    <div class="mac-tarih">
+                        <span class="gun">5</span>
+                        <span class="ay">Mart</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Süper Lig</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Galatasaray</span>
+                            <span class="skor">3-1</span>
+                            <span class="deplasman">Antalyaspor</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc galibiyet">W</div>
+                </div>
+                
+                <div class="mac-gecmis-ogesi besiktas">
+                    <div class="mac-tarih">
+                        <span class="gun">28</span>
+                        <span class="ay">Şub</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Türkiye Kupası</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Beşiktaş</span>
+                            <span class="skor">2-2</span>
+                            <span class="deplasman">Galatasaray</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc beraberlik">D</div>
+                </div>
+    
+                <div class="mac-gecmis-ogesi fenerbahce">
+                    <div class="mac-tarih">
+                        <span class="gun">15</span>
+                        <span class="ay">Oca</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Süper Lig</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Fenerbahçe</span>
+                            <span class="skor">1-2</span>
+                            <span class="deplasman">Trabzonspor</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc maglubiyet">L</div>
+                </div>
+    
+                <div class="mac-gecmis-ogesi trabzonspor">
+                    <div class="mac-tarih">
+                        <span class="gun">22</span>
+                        <span class="ay">Oca</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Türkiye Kupası</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Trabzonspor</span>
+                            <span class="skor">0-0</span>
+                            <span class="deplasman">Beşiktaş</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc beraberlik">D</div>
+                </div>
+    
+                <div class="mac-gecmis-ogesi galatasaray">
+                    <div class="mac-tarih">
+                        <span class="gun">10</span>
+                        <span class="ay">Oca</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Süper Lig</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Galatasaray</span>
+                            <span class="skor">4-0</span>
+                            <span class="deplasman">Kasımpaşa</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc galibiyet">W</div>
+                </div>
+    
+                <div class="mac-gecmis-ogesi fenerbahce">
+                    <div class="mac-tarih">
+                        <span class="gun">18</span>
+                        <span class="ay">Kas</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Süper Lig</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Fenerbahçe</span>
+                            <span class="skor">2-1</span>
+                            <span class="deplasman">Ankaragücü</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc galibiyet">W</div>
+                </div>
+    
+                <div class="mac-gecmis-ogesi besiktas">
+                    <div class="mac-tarih">
+                        <span class="gun">30</span>
+                        <span class="ay">Eyl</span>
+                    </div>
+                    <div class="mac-detaylar">
+                        <div class="yarisma">Süper Lig</div>
+                        <div class="mac-takimlari">
+                            <span class="ev-sahibi">Beşiktaş</span>
+                            <span class="skor">3-3</span>
+                            <span class="deplasman">Sivasspor</span>
+                        </div>
+                    </div>
+                    <div class="mac-sonuc beraberlik">D</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--MAÇ TABLOLARI BİTİŞ -->
+    <!-- HAKKIMDA BAŞLANGIÇ-->
+    <section class="modern-bolum" id="hakkımızda">
+        <div class="kapsayici">
+          <div class="bolum-baslik">
+            <h2>Hakkımızda 👤</h2>
+          </div>
+          <div class="hakkinda-icerik">
+            <div class="hakkinda-resim">
+              <img src="resimler/takım.webp" alt="Spor Platformu Ekibi">
+            </div>
+            <div class="hakkinda-metin">
+              <h3>Türkiye'nin En Güncel Futbol Platformu</h3>
+              <p>2023 yılında kurulan Spor Platformu, futbol tutkunları için en güncel haberleri, canlı maç skorlarını ve analizleri sunan bir platformdur.</p>
+              <p>Profesyonel ekibimiz, futbolseverlere en doğru bilgileri en hızlı şekilde ulaştırmak için çalışmaktadır.</p>
+              <div class="hakkinda-istatistikler">
+                <div class="istatistik-oge" data-target="500000">
+                  <div class="istatistik-ikon">👥</div>
+                  <span class="istatistik-sayi">0K</span>
+                  <span class="istatistik-etiket">Aylık Ziyaretçi</span>
+                </div>
+                <div class="istatistik-oge" data-target="100">
+                  <div class="istatistik-ikon">✍️</div>
+                  <span class="istatistik-sayi">0K</span>
+                  <span class="istatistik-etiket">Spor Yazarı</span>
+                </div>
+                <div class="istatistik-oge">
+                  <div class="istatistik-ikon">🕒</div>
+                  <span class="istatistik-sayi">7/24</span>
+                  <span class="istatistik-etiket">Canlı Destek</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- HAKKIMDA BİTİŞ -->
+  <!-- FOOTER BAŞLANGIÇ -->
+  <footer class="gelismis-footer">
+    <div class="dalga-kapsayici">
+      <svg 
+        class="footer-dalga" 
+        viewBox="0 0 1440 320" 
+        preserveAspectRatio="none"
+      >
+        <path 
+          fill="#3b82f6" 
+          fill-opacity="1" 
+          d="M0,160L48,176C96,192,192,224,288,229.3C384,235,480,213,576,186.7C672,160,768,128,864,133.3C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+  
+    <div class="footer-icerik">
+      <div class="footer-izgara">
+        <div class="footer-sutun marka-sutun">
+          <div class="marka-logo">
+            <img src="resimler/logo.webp" alt="Logo">
+            <h2>Spor Platform</h2>
+          </div>
+          <p class="marka-aciklama">
+            Futbolun nabzını tutan, güncel haberlerin ve canlı skorların merkezi.
+          </p>
+          <div class="marka-rozetler">
+            <img src="resimler/icons8-google-play-store-1600.png" alt="App Store" style="width: 50px; height: 50px;">
+            <img src="resimler/pngwing.com.png" alt="Google Play"style="width: 125px; height: 50px;">
+          </div>
+        </div>
+  
+        <div class="footer-sutun hizli-linkler" >
+          <h3>Hızlı Erişim</h3>
+          <ul>
+            <li><a href="#" class="link-oge" >Anasayfa</a></li>
+            <li><a href="#" class="link-oge">Maç Özetleri</a></li>
+            <li><a href="#" class="link-oge">Transfer Haberleri</a></li>
+            <li><a href="#" class="link-oge">Canlı Skorlar</a></li>
+            <li><a href="#" class="link-oge">İstatistikler</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-sutun iletisim-bilgi">
+          <h3>İletişim</h3>
+          <div class="iletisim-detaylar">
+            <div class="iletisim-oge">
+              <i class="fas fa-envelope"></i>
+              <span>info@sporplatform.com</span>
+            </div>
+            <div class="iletisim-oge">
+              <i class="fas fa-phone"></i>
+              <span>+90 (212) 123 45 67</span>
+            </div>
+            <div class="iletisim-oge">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>İstanbul, Türkiye</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-sutun bulten">
+          <h3>Bülten Aboneliği</h3>
+          <p class="bulten-aciklama">
+            En son haberlerden anında haberdar olun!
+          </p>
+          <form class="bulten-form">
+            <div class="giris-alani">
+              <input 
+                type="email" 
+                placeholder="E-posta adresinizi girin" 
+                required
+              >
+              <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="footer-alt">
+        <div class="sosyal-linkler">
+          <a href="#" class="sosyal-ikon twitter" ><i class="fab fa-twitter"></i></a>
+          <a href="#" class="sosyal-ikon facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="sosyal-ikon instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="sosyal-ikon youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="telif-hakki">
+          © 2025 Spor Platform. Tüm hakları saklıdır.
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- FOOTER BİTİŞİ -->
+<!-- JAVASCİRPİT KÜTÜPHANALERİ VE BAĞLANTILARI -->
+        <script src="JS/maçgeçmişi.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+        <script src="JS/navbar.js" defer></script>
+        <script src="JS/hakkımızda.js" defer></script>
+        <script src="JS/maçskorları.js" defer></script>
+        <script src="JS/transferkarları.js" defer></script>
+        <script src="JS/anasayfayazı.js" defer></script>
+        <script src="JS/performans.js"></script>
+        <script src="JS/yukarı.js"></script>
+        <!-- JAVASCİRPİT KÜTÜPHANALERİ VE BAĞLANTILARI -->
+    </body>
+</html>

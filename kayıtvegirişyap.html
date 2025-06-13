@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş ve Kayıt Sayfası</title>
+    <link rel="stylesheet" href="css/kayıtvegirişyap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <a href="TRfutbol.html" class="ana-sayfa-butonu">
+        <i class="fas fa-home"></i> 
+        Ana Sayfa
+    </a>
+    
+    <div class="ana-konteyner">
+        
+        <div class="resim-bolumu">
+            <img src="resimler/rafasilva222.jpg" alt="Kimlik Doğrulama Arka Planı">
+            <div class="resim-ustu-metin">
+                <h3>Güvenli Giriş</h3>
+                <p>Modern ve güvenilir kimlik doğrulama platformu</p>
+            </div>  
+        </div>
+        <div class="form-bolumu">
+         
+            <form id="giris-formu">
+                <h2>Giriş Yap</h2>
+                <div class="giris-grubu">
+                    <input type="email" placeholder="E-posta Adresiniz" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="giris-grubu">
+                    <input type="password" placeholder="Şifreniz" required id="sifre-girisi">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="buton">Giriş Yap</button>
+                <div class="form-alt-metin">
+                    Hesabınız yok mu? <a href="#" id="kayit-linki">Kayıt Ol</a>
+                </div>
+            </form>
+  
+            <form id="kayit-formu">
+                <h2>Kayıt Ol</h2>
+                <div class="giris-grubu">
+                    <input type="text" placeholder="Kullanıcı Adınız" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="giris-grubu">
+                    <input type="email" placeholder="E-posta Adresiniz" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="giris-grubu">
+                    <input type="password" placeholder="Şifre Oluşturun" required id="kayit-sifresi">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="giris-grubu">
+                    <input type="password" placeholder="Şifreyi Onaylayın" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="buton">Kayıt Ol</button>
+                <div class="form-alt-metin">
+                    Zaten hesabınız var mı? <a href="#" id="giris-linki">Giriş Yapın</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+  <script src="JS/kayıtyapgirişol.js"></script>
+</body>
+</html>

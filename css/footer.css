@@ -1,0 +1,375 @@
+:root {
+  --primary-color2: #4f46e5;
+  --secondary-color2: #8b5cf6;
+  --text-dark2: #111827;
+  --text-light2: #f9fafb;
+  --background-light: white;
+  --gradient-primary: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  --transition-speed: 0.3s;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gelismis-footer {
+  margin-top: 3rem;
+  width: 100%;
+  position: relative;
+  color: var(--text-dark2);
+  background-color: var(--background-light);
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.dalga-kapsayici {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.footer-dalga {
+  width: 100%;
+  height: auto;
+}
+
+.footer-icerik {
+  position: relative;
+  padding: 2rem 1.5rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.footer-izgara {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-sutun {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: fade-in 0.6s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.footer-sutun h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  color: var(--primary-color2);
+}
+
+.footer-sutun h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 3px;
+  transition: width var(--transition-speed);
+}
+
+.footer-sutun:hover h3::after {
+  width: 80px;
+}
+
+.marka-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.marka-logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.marka-logo img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.marka-logo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marka-aciklama, .bulten-aciklama {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-dark2);
+  margin-bottom: 0.5rem;
+}
+
+.marka-rozetler {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.marka-rozetler img {
+  height: 35px;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-speed);
+  box-shadow: var(--box-shadow);
+}
+
+.marka-rozetler img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hizli-linkler ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hizli-linkler li {
+  margin-bottom: 0.5rem;
+  transition: transform var(--transition-speed);
+}
+
+.hizli-linkler li:hover {
+  transform: translateX(4px);
+}
+
+.link-oge {
+  color: var(--text-dark2);
+  text-decoration: none;
+  transition: all var(--transition-speed);
+  position: relative;
+  display: inline-block;
+  padding: 0.2rem 0;
+}
+
+.link-oge::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width var(--transition-speed);
+  border-radius: 1px;
+}
+
+.link-oge:hover {
+  color: var(--primary-color2);
+}
+
+.link-oge:hover::after {
+  width: 100%;
+}
+
+.iletisim-oge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-dark2);
+  padding: 0.4rem 0;
+  transition: all var(--transition-speed);
+}
+
+.iletisim-oge:hover {
+  transform: translateX(4px);
+}
+
+.iletisim-oge i {
+  color: var(--primary-color2);
+  width: 18px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.bulten-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.giris-alani {
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all var(--transition-speed);
+}
+
+.giris-alani:focus-within {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.giris-alani input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-dark2);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.giris-alani input::placeholder {
+  color: #9ca3af;
+}
+
+.giris-alani button {
+  background: var(--gradient-primary);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all var(--transition-speed);
+  position: relative;
+  overflow: hidden;
+}
+
+.giris-alani button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
+}
+
+.giris-alani button:hover::before {
+  left: 100%;
+}
+
+.footer-alt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sosyal-linkler {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.sosyal-ikon {
+  color: var(--text-dark2);
+  font-size: 1.25rem;
+  transition: all var(--transition-speed);
+  position: relative;
+}
+
+.sosyal-ikon::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 25px;
+  height: 2px;
+  background: currentColor;
+  transition: transform var(--transition-speed);
+  border-radius: 1px;
+}
+
+.sosyal-ikon:hover {
+  transform: translateY(-3px);
+}
+
+.sosyal-ikon:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+
+.sosyal-ikon.twitter:hover { color: #1DA1F2; }
+.sosyal-ikon.facebook:hover { color: #1877F2; }
+.sosyal-ikon.instagram:hover { 
+  color: transparent;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.sosyal-ikon.youtube:hover { color: #FF0000; }
+
+.telif-hakki {
+  color: var(--text-dark2);
+  opacity: 0.8;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+  .footer-izgara {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-izgara {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-alt {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .sosyal-linkler {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-dalga {
+    height: 70px;
+  }
+  
+  .footer-icerik {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-dalga {
+    height: 50px;
+  }
+  
+  .footer-icerik {
+    padding: 1.5rem 1rem 4.5rem;
+  }
+  
+  .footer-sutun {
+    gap: 0.5rem;
+  }
+  
+  .dalga-kapsayici {
+    bottom: 0;
+  }
+}
