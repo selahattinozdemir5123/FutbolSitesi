@@ -8,7 +8,7 @@ Futbolseverlerin ihtiyaç duyabileceği temel bilgileri ve güncel transfer habe
 ## Özellikler
 
 - **Anasayfa:** Site girişinde kullanıcıları karşılayan genel futbol temalı sayfa.
-- **Transfer Haberleri:** Güncel transfer haberlerinin listelendiği bölüm.
+- **Transfer Haberleri:** transfer haberlerinin listelendiği bölüm.
 - **Puan Tablosu:** Türkiye’nin en popüler 5 futbol liginden puan durumu bilgileri (Şu an gerçek veriler kullanılmamaktadır, frontend demo amaçlıdır).
 - **Maç Geçmişleri:** Türkiye’nin dört büyük takımının (Galatasaray, Beşiktaş, Fenerbahçe, Trabzonspor) geçmiş maç sonuçları gösterilmektedir.
 - **Hakkımızda:** Site hakkında bilgi verilen bölüm.
